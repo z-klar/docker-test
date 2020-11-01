@@ -1,0 +1,18 @@
+version: '3'
+
+networks:
+  backend:
+
+services:
+
+  docker-test:
+    image: "docker-test"
+    container_name: "docker-test"
+    ports:
+      - "9999:9999"
+    environment:
+      - PARAMETER1=Ahoj kamaradi vubec vas nemmame radi
+      - PARAMETER2=A jeste druhy parametr
+    networks:
+      - backend
+
