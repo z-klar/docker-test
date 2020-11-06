@@ -15,4 +15,7 @@ services:
       - PARAMETER2=A jeste druhy parametr
     networks:
       - backend
+    volumes:
+      - ./config:/configdst
+
 
